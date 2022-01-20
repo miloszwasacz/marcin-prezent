@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<title>Piętro ${i}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+		<script type="module" src="zagadka${i}.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<section class="hero is-flex-direction-row is-align-items-baseline">
+				<div class="is-flex is-align-items-baseline">
+					<p class="title is-size-5-mobile m-0 mr-5 mr-2-mobile">Piętro ${i}</p>
+					<a class="is-size-5 is-size-6-mobile has-text-weight-bold" href="../kryjowka">Kryjówka</a>
+				</div>
+				<p class="subtitle is-size-6-mobile m-0">
+					<span>Postęp:</span>
+					<br class="is-hidden-tablet" /><span id="progress"></span><span>%</span>
+				</p>
+			</section>
+		</div>
+		<div class="content is-flex">
+            $(cat ${code_file})
+        </div>
+	</body>
+</html>
