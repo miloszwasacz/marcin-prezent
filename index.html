@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<title>Centrum Operacji</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<script type="module" src="main.js"></script>
+	</head>
 
-<head>
-    <meta charset='utf-8'>
-    <title>Centrum zagadek</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-
-<body>
-
-</body>
-
+	<body>
+		<div class="header">
+			<section class="hero is-flex-direction-row is-align-items-baseline">
+				<div class="is-flex is-align-items-baseline">
+					<p class="title m-0 mr-5">Centrum Operacji</p>
+					<a class="is-size-5 has-text-weight-bold" href="./zadania">Kryjówka</a>
+				</div>
+				<p class="subtitle m-0"><span>Progres:&nbsp;</span><span id="progress"></span><span>%</span></p>
+			</section>
+			<p></p>
+			<a href=""></a>
+			<a href=""></a>
+		</div>
+		<div class="content is-flex">
+			<!--#region Progress margin -->
+			<div id="margins" class="is-flex is-flex-direction-column is-justify-content-center">
+				<div class="is-flex is-align-items-center">
+					<div class="margin-indicator vertical"></div>
+					<div class="margin-indicator horizontal"></div>
+					<div class="margin-indicator vertical full" style="right: 2px"></div>
+				</div>
+				<p id="margins-text" class="margin-text"></p>
+			</div>
+			<!--#endregion-->
+			<div id="content">
+				<p class="has-text-justified">
+					W Bajtocji żył sobie pewien Marcin, który postanowił zorganizować imprezę z okazji swoich 19. urodzin. Jego znajomi
+					zrobili dla niego prezent, ale podczas transportu został on przechwycony przez gangstera Al Bajtone, który zamknął
+					prezent w sejfie. Jedynym sposobem odzyskania prezentu jest zinfiltrowanie kryjówki złoczyńcy i pozyskanie kodu
+					otwierającego sejf.
+				</p>
+				<input id="pr" type="text" />
+				<button id="bt">progress</button>
+			</div>
+			<!--#region Progress margin -->
+			<div id="margins" class="is-flex is-flex-direction-column is-justify-content-center">
+				<div class="is-flex is-align-items-center">
+					<div class="margin-indicator vertical full" style="left: 2px"></div>
+					<div class="margin-indicator horizontal" style="margin-left: 2px"></div>
+					<div class="margin-indicator vertical"></div>
+				</div>
+				<p id="margins-text" class="margin-text"></p>
+			</div>
+			<!--#endregion-->
+		</div>
+	</body>
 </html>

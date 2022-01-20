@@ -1,1 +1,77 @@
+/*#region HTML */
+html,
+body {
+	color: white !important;
+	background-color: #333;
+	font-family: monospace, monospace;
+}
+html {
+	height: 100%;
+	overflow: auto !important;
+}
+body {
+	width: 100%;
+	min-height: 100%;
+}
+/*#endregion*/
 
+.header {
+	padding: 1rem 1.5rem;
+	border-bottom: 1px solid grey;
+}
+
+.content {
+	padding: 1rem;
+}
+
+/*#region Progress margin */
+.margin-text {
+	width: 100%;
+	padding: 0 5px;
+	text-align: center;
+	overflow: hidden;
+}
+@media only screen and (max-width: 3rem) {
+	.margin-text {
+		display: none;
+	}
+}
+
+#margins {
+	position: relative;
+}
+.margin-indicator {
+	background-color: #0f0;
+}
+.margin-indicator.horizontal {
+	height: 2px;
+	width: calc(100% - 4px);
+}
+.margin-indicator.vertical {
+	height: 10px;
+	width: 2px;
+}
+.margin-indicator.vertical.full {
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+/*#endregion*/
+
+/*#region Text appearance */
+p {
+	color: white !important;
+}
+
+a {
+	color: #0ff;
+}
+
+a:hover {
+	color: violet;
+}
+
+a:visited {
+	color: #0f0;
+}
+/*#endregion*/
