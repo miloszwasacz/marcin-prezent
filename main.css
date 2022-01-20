@@ -15,10 +15,26 @@ body {
 }
 /*#endregion*/
 
+/*#region Header */
 .header {
 	padding: 1rem 1.5rem;
 	border-bottom: 1px solid grey;
 }
+
+.header .title {
+	flex: none;
+}
+
+.header .subtitle {
+	min-width: 100px;
+	text-align: end;
+}
+
+.header .is-flex a,
+.header.is-flex a {
+	width: 100%;
+}
+/*#endregion*/
 
 .content {
 	padding: 1rem;
@@ -73,5 +89,13 @@ a:hover {
 
 a:visited {
 	color: #0f0;
+}
+/*#endregion*/
+
+/*#region Helper */
+@media only screen and (max-width: 768px) {
+	.mr-2-mobile {
+		margin-right: 0.5rem !important;
+	}
 }
 /*#endregion*/

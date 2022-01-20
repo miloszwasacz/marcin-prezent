@@ -2,19 +2,20 @@
 <html lang="pl">
 	<head>
 		<meta charset="utf-8" />
-		<title>Centrum Operacji</title>
+		<title>Kryjówka Al Bajtone</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-		<script type="module" src="main.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="./kryjowka.css" />
+		<script type="module" src="kryjowka.js"></script>
 	</head>
 
 	<body>
 		<div class="header">
 			<section class="hero is-flex-direction-row is-align-items-baseline">
 				<div class="is-flex is-align-items-baseline">
-					<p class="title is-size-5-mobile m-0 mr-5 mr-2-mobile">Centrum <br class="is-hidden-tablet" />Operacji</p>
-					<a class="is-size-5 is-size-6-mobile has-text-weight-bold" href="./kryjowka">Kryjówka</a>
+					<p class="title is-size-5-mobile m-0 mr-5 mr-2-mobile">Kryjówka <br class="is-hidden-tablet" />Al Bajtone</p>
+					<a class="is-size-5 is-size-6-mobile has-text-weight-bold" href="../">Centrum Operacji</a>
 				</div>
 				<p class="subtitle is-size-6-mobile m-0">
 					<span>Postęp:</span>
@@ -34,20 +35,18 @@
 			</div>
 			<!--#endregion-->
 			<div id="content">
-				<p class="has-text-justified">
-					W Bajtocji żył sobie pewien Marcin, który postanowił zorganizować imprezę z okazji swoich 19. urodzin. Jego znajomi
-					zrobili dla niego prezent, ale podczas transportu został on przechwycony przez gangstera Al Bajtone, który zamknął
-					prezent w sejfie. Jedynym sposobem odzyskania prezentu jest zinfiltrowanie kryjówki złoczyńcy i pozyskanie kodu
-					otwierającego sejf.
-				</p>
-
-				<p class="subtitle has-text-weight-semibold mt-6 mb-1">Instrukcja</p>
-				<p class="has-text-justified">
-					W "kryjówce" znajdziesz X zagadek programistycznych. Proszę nie zaglądaj do kodu strony, bo popsujesz sobie zabawę
-					(jeśli jednak będziesz chciał to zrobić – cóż, nie powstrzymamy cię).
-				</p>
-				<input id="pr" type="text" />
-				<button id="bt">progress</button>
+				<div class="is-flex">
+					<div class="elevator-shaft">
+						<div id="elevator" class="elevator lines"></div>
+						<div class="elevator"></div>
+					</div>
+					<ul>
+						<li><a href="pietro1">Piętro 1</a></li>
+						<li><a href="">Piętro 2</a></li>
+						<li><a href="">Piętro 3</a></li>
+						<li><a href="">Piętro 4</a></li>
+					</ul>
+				</div>
 			</div>
 			<!--#region Progress margin -->
 			<div id="margins" class="is-flex is-flex-direction-column is-justify-content-center">

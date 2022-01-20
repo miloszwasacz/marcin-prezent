@@ -1,8 +1,14 @@
 import * as Consts from "./consts.js";
 
+const PROGRESS_PRECISION = 2;
+
+/**
+ * @returns {number} Progress
+ */
 export function setUpView() {
 	const progress = getProgress();
 	setProgress(progress);
+	return progress;
 }
 
 /**
@@ -34,10 +40,10 @@ function setMargins(progress) {
  */
 function setProgress(progress) {
 	const view = document.getElementById("progress");
-	view.innerText = progress.toFixed(0);
+	view.innerText = progress.toFixed(PROGRESS_PRECISION);
 	const textViews = document.querySelectorAll("#margins-text");
 	for (const view of textViews) {
-		const margin = 100 - Number(progress.toFixed(0));
+		const margin = 100 - Number(progress.toFixed(PROGRESS_PRECISION));
 		view.innerText = `${margin}%`;
 	}
 	setMargins(progress);
@@ -50,13 +56,13 @@ function setProgress(progress) {
  */
 function getProgress() {
 	const progress = Number(localStorage.getItem(Consts.PROGRESS_KEY));
-	return Number.isNaN(progress) ? 0 : Number(progress.toFixed(0));
+	return Number.isNaN(progress) ? 0 : Number(progress.toFixed(PROGRESS_PRECISION));
 }
 
 /**
  * @param {number} progress
  */
 export function saveProgress(progress) {
-	localStorage.setItem(Consts.PROGRESS_KEY, Number.isNaN(progress) ? "0" : progress.toFixed(0));
+	localStorage.setItem(Consts.PROGRESS_KEY, Number.isNaN(progress) ? "0" : progress.toFixed(PROGRESS_PRECISION));
 }
 //#endregion
