@@ -1,0 +1,74 @@
+.container,
+.code {
+	width: 100%;
+}
+
+.filename,
+.code-wrapper {
+	color: white;
+	background-color: black;
+	border: 1px solid #6fc3df;
+}
+
+.filename {
+	width: fit-content;
+	padding: 0.25rem 0.5rem;
+	margin-bottom: -1px !important;
+	display: flex;
+	align-items: center;
+}
+
+.filename i:before {
+	margin-right: 10px;
+}
+
+.filename i.python {
+	color: #519aba;
+}
+
+.code-wrapper {
+	width: 100%;
+	overflow: auto;
+}
+
+code {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 19px;
+	white-space: nowrap !important;
+	display: block;
+	width: fit-content;
+	color: inherit;
+	background-color: transparent;
+	padding: 1.5rem;
+	padding-top: 1rem;
+}
+
+code .indent {
+	border-left: 1px solid white;
+}
+
+.indent > span::before {
+	content: "\A0\A0\A0\A0";
+}
+
+code span.p {
+	color: #c586c0;
+}
+
+code span.b {
+	color: #569cd6;
+}
+
+code span.lb {
+	color: #9cdcfe;
+}
+
+code span.g {
+	color: #b5cea8;
+}
+
+code span.y {
+	color: #dcdcaa;
+}
