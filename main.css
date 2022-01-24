@@ -79,6 +79,10 @@ p {
 	color: white !important;
 }
 
+p#locked-message {
+	width: 100%;
+}
+
 a {
 	color: #0ff;
 }

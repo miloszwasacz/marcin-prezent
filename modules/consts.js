@@ -1,5 +1,6 @@
 export const PROGRESS_KEY = "PROGRESS";
 export const PROGRESS_PRECISION = 2;
+export const PUZZLE_COUNT = 4;
 
 export const MOBILE_BREAKPOINT = 768; //px
 export const SIZE_BREAKPOINT = 48; //px

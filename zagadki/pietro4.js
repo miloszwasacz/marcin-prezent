@@ -10,12 +10,12 @@ unlockPuzzle()
  */
 const input = document.getElementById("answer");
 document.getElementById("check-button").onclick = () => {
-	const result = input.value.trim() === "${ANSWER}";
+	const result = input.value.trim() === "0";
     showMessage(result)
 };
 
 function unlockPuzzle() {
-    const requiredProgress = (${LEVEL} - 1) * 100 / PUZZLE_COUNT
+    const requiredProgress = (4 - 1) * 100 / PUZZLE_COUNT
     if (getProgress() >= requiredProgress) {
         document.getElementById("locked-message").setAttribute("hidden", "true")
         document.getElementById("container").removeAttribute("hidden")

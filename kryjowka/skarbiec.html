@@ -2,20 +2,19 @@
 <html lang="pl">
 	<head>
 		<meta charset="utf-8" />
-		<title>Piętro ${i}</title>
+		<title>Skarbiec</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="./zagadki.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-		<script type="module" src="pietro${i}.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="./kryjowka.css" />
+		<script type="module" src="skarbiec.js"></script>
 	</head>
 
 	<body>
 		<div class="header">
 			<section class="hero is-flex-direction-row is-align-items-baseline">
 				<div class="is-flex is-align-items-baseline">
-					<p class="title is-size-5-mobile m-0 mr-5 mr-2-mobile">Piętro ${i}</p>
+					<p class="title is-size-5-mobile m-0 mr-5 mr-2-mobile">Skarbiec</p>
 					<a class="is-size-5 is-size-6-mobile has-text-weight-bold" href="../kryjowka">Kryjówka</a>
 				</div>
 				<p class="subtitle is-size-6-mobile m-0">
@@ -25,20 +24,7 @@
 			</section>
 		</div>
 		<div class="content is-flex">
-			<div id="container" class="container" hidden>
-				<div class="code">
-					$(cat ${code_file})
-					<div class="is-flex">
-						<input id="answer" type="text" />
-						<button id="check-button">Sprawdź</button>
-					</div>
-					<p id="wrong-message" class="is-size-7" hidden><i>Błędna odpowiedź</i></p>
-					<div id="correct-message" hidden>
-						<p class="is-size-7"><i>Poprawna odpowiedź</i></p>
-						<a href="../kryjowka">Przejdź dalej</a>
-					</div>
-				</div>
-			</div>
+			<div id="container" class="container" hidden></div>
 			<p id="locked-message" class="has-text-centered">Jeszcze nie dotarłeś do tego piętra</p>
 		</div>
 	</body>

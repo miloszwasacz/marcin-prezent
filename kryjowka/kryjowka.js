@@ -5,4 +5,4 @@ const progress = setUpView();
 
 const elevator = document.getElementById("elevator");
 const offset = window.innerWidth > Consts.MOBILE_BREAKPOINT ? Consts.ELEVATOR_OFFSET : Consts.ELEVATOR_OFFSET_MOBILE;
-elevator.style.height = `calc(${progress}% + ${offset}px)`;
+elevator.style.height = `calc(${(progress * Consts.PUZZLE_COUNT) / (Consts.PUZZLE_COUNT + 1)}% + ${offset}px)`;

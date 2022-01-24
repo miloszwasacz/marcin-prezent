@@ -2,20 +2,20 @@
 <html lang="pl">
 	<head>
 		<meta charset="utf-8" />
-		<title>Piętro ${i}</title>
+		<title>Piętro 1</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="./zagadki.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-		<script type="module" src="pietro${i}.js"></script>
+		<script type="module" src="pietro1.js"></script>
 	</head>
 
 	<body>
 		<div class="header">
 			<section class="hero is-flex-direction-row is-align-items-baseline">
 				<div class="is-flex is-align-items-baseline">
-					<p class="title is-size-5-mobile m-0 mr-5 mr-2-mobile">Piętro ${i}</p>
+					<p class="title is-size-5-mobile m-0 mr-5 mr-2-mobile">Piętro 1</p>
 					<a class="is-size-5 is-size-6-mobile has-text-weight-bold" href="../kryjowka">Kryjówka</a>
 				</div>
 				<p class="subtitle is-size-6-mobile m-0">
@@ -27,7 +27,22 @@
 		<div class="content is-flex">
 			<div id="container" class="container" hidden>
 				<div class="code">
-					$(cat ${code_file})
+					<p class="filename active">
+    <i class="devicon-python-plain python"></i><span class="python">puzzle1.py</span>
+</p>
+<div class="code-wrapper">
+    <code class="active">
+        <span class="p">import</span> sys
+        <div class="indent">
+            <span>sys.setrecursionlimit(<span class="g">10000</span>)</span><br>
+            <span><span class="b">def</span> <span class="y">fib</span>(<span class="lb">n</span>):</span><br>
+            <span><span class="indent">
+                <span><span class="p">return</span> fib(n-<span class="g">1</span>)+fib(n-<span class="g">2</span>) <span class="p">if</span> n <span class="b">not in</span> (<span class="g">0</span>,<span class="g">1</span>) <span class="p">else</span> <span class="g">1</span></span>
+            </span></span><br>
+            <span>fib(<span class="g">9999</span>)</span>
+        </div>
+    </code>
+</div>
 					<div class="is-flex">
 						<input id="answer" type="text" />
 						<button id="check-button">Sprawdź</button>

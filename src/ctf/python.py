@@ -66,7 +66,7 @@ def main(x, A, y, b):
         print(f'All subsets for A={A}: {subset(A)}')
         e = eAproximation()
         print(f'Aproximation of e for n={y}: {e.aproximate(y, b)}')
-        print(f'Final messaege: {dictionary()}')
+        print(f'Final message: {dictionary()}')
     except AssertionError:
         print(1)
         sys.exit(1)
