@@ -7,6 +7,13 @@ input + button {
 	margin-left: 0.25rem;
 }
 
+pre {
+	width: fit-content;
+	white-space: pre-line !important;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
 .filename,
 .code-wrapper {
 	color: white;

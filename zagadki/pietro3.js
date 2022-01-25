@@ -10,7 +10,7 @@ unlockPuzzle()
  */
 const input = document.getElementById("answer");
 document.getElementById("check-button").onclick = () => {
-	const result = input.value.trim() === "abc";
+	const result = input.value.trim().toUpperCase() === "BAJTEK".toUpperCase();
     showMessage(result)
 };
 
