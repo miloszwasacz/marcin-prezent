@@ -1,6 +1,5 @@
-import { PROGRESS_KEY, PROGRESS_PRECISION } from "./consts.js";
+import { PROGRESS_KEY, PROGRESS_PRECISION, PUZZLE_COUNT } from "./consts.js";
 
-//#region Progress
 /**
  * @returns {number} Progress in percentage
  */
@@ -12,7 +11,14 @@ export function getProgress() {
 /**
  * @param {number} progress
  */
-export function saveProgress(progress) {
+function saveProgress(progress) {
 	localStorage.setItem(PROGRESS_KEY, Number.isNaN(progress) ? "0" : progress.toFixed(PROGRESS_PRECISION));
 }
-//#endregion
+
+/**
+ * Sets progress according to puzzle level
+ * @param {number} puzzleLevel
+ */
+export function setPuzzleStatus(puzzleLevel) {
+	saveProgress((puzzleLevel * 100) / PUZZLE_COUNT);
+}

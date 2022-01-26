@@ -1,5 +1,5 @@
 import { setUpView } from "../modules/view-controller.js";
-import { getProgress } from "../modules/progress-controller.js";
+import { getProgress, setPuzzleStatus } from "../modules/progress-controller.js";
 import { PUZZLE_COUNT } from "../modules/consts.js";
 
 setUpView(true);
@@ -12,6 +12,10 @@ const input = document.getElementById("answer");
 document.getElementById("check-button").onclick = () => {
 	const result = input.value.trim().toUpperCase() === "BAJTEK".toUpperCase();
     showMessage(result)
+    if(result) {
+        setPuzzleStatus(2)
+        setUpView(true)
+    }
 };
 
 function unlockPuzzle() {
