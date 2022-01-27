@@ -4,7 +4,7 @@ template_html=template.html
 template_js=template.js
 output=../zagadki/pietro
 
-for i in 1 2 3 4
+for i in 1 2 3
 do
     code_file="${code_file_path}${i}.html"
     . "${code_file_path}${i}.conf"
